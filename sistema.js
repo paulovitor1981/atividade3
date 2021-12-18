@@ -1,53 +1,25 @@
+let  listaDePecas  =  [ "Amortecedor" ,  "disco de freio" ,  "Radiador" ]
 
+let peso  =  50
 
-for (let contador = 0; contador <= numeroDeAlunos; contador++) {
-  
+if ( peso  <  100 ) {
+    console . log ( "A peça não possui o peso adequado." );
+}  else  {
+    console . log ( "A peça possui o peso adequado. Cadastro permitido." )
+}
 
-  if(contador == 0){
-      console.log("o numero atual é zero")
-  }else if(contador % 2 == 0){
-      console.log("o numero " + contador + " è par")
-  }else{
-      console.log("o numero " + contador + " é impar")
-  }
-} 
+if ( listaDePecas . comprimento  <=  10 ) {
+    console . log ( "coloque mais peças." );
+}  else  {
+    console . log ( "Não tem mais espaço na lista." )
+}
 
+let  nomePeca  =  "Disco de Freio"
 
-
-//let nomeDeAluno = ["marcel","Franklin","Rita","Afrânio"]
-
-
-//for (let nome of nomeDeAluno) {
-  //  console.log(`Esta pessoa se chama ${nome}`)
-//}
-//let  numeroDeAlunos  =  10;
-
-//let  contador  = 0;
-
-//while (  contador  <=  numeroDeAlunos )  {
-     //console.log(contador)
-
-  //   if ( contador  ==  0 ) {
-    //     console.log ( "O número atual é zero" )
-     //} else  if ( contador  %  2  !=  0 ) {
-       //  console.log ( "O número"  +  contador  +  "é impar" )
-     //} else {
-       //  console.log ( `O número $ { contador } é par` )
-     //}
-     //contador ++ ;       
- //}
-
-
-
-
-// for (let contador = 0; contador <= numeroDeAlunos; contador ++) {
-// //console.log(contador)
-
-// if (contador == 0) {
-// console.log ("O número atual é zero")
-//} else if (contador% 2 == 0) {
-// console.log ("O número" + contador + "é par")
-// }else{
-// console.log (`O número $ {contador} é impar`)
-//}       
-//}
+if ( nomePeca . comprimento  >  3 ) {
+    console . log ( "Nome está adequado para cadastro" );
+}  else  if ( nomePeca . comprimento  ==  0 ) {
+    console . log ( "O nome da peça não pode ser vazio" );
+}  else  {
+    console . log ( "O nome deve ter mais de 3 caracteres para cadastro, digite o nome novamente" )
+}
